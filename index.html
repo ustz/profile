@@ -7,46 +7,74 @@
     <link rel="stylesheet" type = "text/css" href="style.css">
   </head>
   <body>
-    <div class="container">
-      <div class="card">
-        <img src="images/avatar-redim.png" class="avatar" alt="">
-        <h1>Ulysse Schwartz</h1>
-        <h2>Financial Officer</h2>
-        <p>I've worked 2 years in <strong>Corporate Finance </strong>and now wants to develop my own project.</p>
-      </div>
-      <div class="card">
-        <ul class="list-inline">
-          <li><a href="#" class="link"><i class="fa fa-facebook" aria-hidden="true"></i><br>Facebook</a></li>
-          <li><a href="#" class="link"><i class="fa fa-linkedin" aria-hidden="true"></i><br>Linkedin</a></li>
-          <li><a href="#" class="link"><i class="fa fa-github" aria-hidden="true"></i><br>Github</a></li>
-        </ul>
-      </div>
-      <div class="card">
-        <h2>My favorites movies</h2>
-        <table>
-          <tbody>
-            <tr>
-              <td><img src="images/rocknrolla.jpg" class="movie-pic"></td>
-              <td><h3>Rock'n Rolla</h3><p>Lenny Cole, a London mob boss, puts the bite on all local real estate transactions. For substantial fees, he's helping Uri Omovich, a Russian developer. As a sign of good faith, Omovich loans Cole a valuable painting, promptly stolen off Cole's wall.</p></td>
-            </tr>
-            <tr>
-              <td><img src="images/la-haine.jpg" class="movie-pic"></td>
-              <td><h3>La haine</h3><p>24 hours in the lives of three young men in the French suburbs the day after a violent riot.</p></td>
-            </tr>
-            <tr>
-              <td><img src="images/django.jpg" class="movie-pic"></td>
-              <td><h3>Django Unchained</h3><p>With the help of a German bounty hunter, a freed slave sets out to rescue his wife from a brutal Mississippi plantation owner.</p></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class ="card">
-        <h2>About this page</h2>
-        <ul class="list-inline">
-          <li class="link"><i class="fa fa-share" aria-hidden="true"></i></li>
-          <li class="link"><i class="fa fa-heart" aria-hidden="true"></i></li>
-          <li class="link"><i class="fa fa-star" aria-hidden="true"></i></li>
-        </ul>
+    <div id="sidebar">
+      <ul>
+        <li>
+          <a href="#summary" class="link">
+            <i class="fa fa-info-circle fa-lg"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#favorite-movies" class="link">
+            <i class="fa fa-file-video-o fa-lg"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#footer" class="link">
+            <i class="fa fa-life-ring fa-lg"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div id="page-content">
+      <div class="container" id="wrapper">
+        <div id="left">
+          <div class="card">
+            <img src="images/avatar-redim.png" class="avatar" alt="">
+            <h1 id="summary">Ulysse Schwartz</h1>
+            <h2>Web dev. Gourou</h2>
+            <p>I've worked 10 years as <strong>fullstack developper </strong>and have put on market thousand of startup.</p>
+          </div>
+          <div class="card" style="padding-top: 20px;padding-bottom: 20px;">
+            <ul class="list-inline">
+              <li><a href="#" class="link"><i class="fa fa-facebook" aria-hidden="true"></i><br>Facebook</a></li>
+              <li><a href="#" class="link"><i class="fa fa-linkedin" aria-hidden="true"></i><br>Linkedin</a></li>
+              <li><a href="#" class="link"><i class="fa fa-github" aria-hidden="true"></i><br>Github</a></li>
+            </ul>
+          </div>
+        </div>
+        <div id="right">
+          <div class="card">
+            <h2 id="favorite-movies">My favorites movies</h2>
+            <table>
+              <tbody>
+                <tr>
+                  <td><img src="images/rocknrolla.jpg" class="movie-pic"></td>
+                  <td><h3>Rock'n Rolla</h3><p>Lenny Cole, a London mob boss, puts the bite on all local real estate transactions. For substantial fees, he's helping Uri Omovich, a Russian developer. As a sign of good faith, Omovich loans Cole a valuable painting, promptly stolen off Cole's wall.</p></td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.imdb.com/title/tt0113247/?ref_=nv_sr_1" target="_blank"><img src="images/la-haine.jpg" class="movie-pic"></a></td>
+                  <td><h3>La haine</h3><p>24 hours in the lives of three young men in the French suburbs the day after a violent riot.</p></td>
+                </tr>
+                <tr>
+                  <td><img src="images/django.jpg" class="movie-pic"></td>
+                  <td><h3>Django Unchained</h3><p>With the help of a German bounty hunter, a freed slave sets out to rescue his wife from a brutal Mississippi plantation owner.</p></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class ="clear"></div>
+        <div id="footer">
+        <div class ="card" style="padding-top: 10px;padding-bottom: 20px;">
+            <h2 id="footer">About this page</h2>
+            <ul class="list-inline">
+              <li class="link"><i class="fa fa-share" aria-hidden="true"></i></li>
+              <li class="link"><i class="fa fa-heart" aria-hidden="true"></i></li>
+              <li class="link"><i class="fa fa-star" aria-hidden="true"></i></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </body>
